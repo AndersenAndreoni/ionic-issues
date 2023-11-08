@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
   constructor() {}
 
+  public rangeValue: number = 50;
+  updatePin(value: number) {
+    let n = this.rangeValue + value;
+    return n;
+  }
 }
